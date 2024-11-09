@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Activity</title>
+</head>
+<body>
+    <h3>Edit Activity</h3>
+    <form method="post" action="/activities/<%= reqActivity.id %>?_method=put">
+        <!-- Activity Name -->
+        <input type="text" name="name" value="<%= reqActivity.name %>" required><br><br>
+
+        <!-- Calories Burned -->
+        <input type="number" name="caloriesBurned" value="<%= reqActivity.caloriesBurned %>" required><br><br>
+
+        <!-- Duration -->
+        <input type="number" name="duration" value="<%= reqActivity.duration %>" required><br><br>
+
+        <button>Update Activity</button>
+    </form>
+</body>
+</html>
