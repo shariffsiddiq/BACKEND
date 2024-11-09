@@ -6,7 +6,7 @@ main().then(() => {
 }).catch(err => console.log(err));
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/activityDB');  // No need for useNewUrlParser or useUnifiedTopology
+    await mongoose.connect('mongodb+srv://shariffsiddiq1975:<shariffsiddiq1975>@cluster0.vhlh6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');  // No need for useNewUrlParser or useUnifiedTopology
 }
 
 main();  // Call the connection function
