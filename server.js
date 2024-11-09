@@ -1,7 +1,8 @@
 const express = require("express");
 let app = express();
 app.use(express.urlencoded({ extended: true }));  // Middleware to parse form data
-let activities = require("./models/activities");  // Importing the activities model
+const activities = require('./models/activities');
+  // Importing the activities model
 let methodOverride = require("method-override");
 
 app.use(methodOverride('_method'));
